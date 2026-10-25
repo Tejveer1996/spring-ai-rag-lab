@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-ai-lab
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2:3b
+
+logging:
+  level:
+    root: INFO
+    org.springframework.ai: DEBUG
+    org.springframework.ai.chat.client.advisor: DEBUG
+    com.tejveer.spring_ai_lab: DEBUG
